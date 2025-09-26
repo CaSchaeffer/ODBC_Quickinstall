@@ -5,7 +5,7 @@ $driverName = "ODBC Driver 17 for SQL Server"
 $computerName = $env:COMPUTERNAME
 $serverName = "$computerName\SQLEXPRESS"
 
-# Define the DSN properties
+# Define the DSN properties, Passwords can't be saved here due to Windows restrictions
 $dsnProperties = @(
     "Server=$serverName",
     "Trusted_Connection=Yes"
